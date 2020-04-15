@@ -1,17 +1,18 @@
 package main
 
-import _"awesomeProject/biz"
-//func main(){
-//	fmt.Println("Hello world!")
-//}
-func GetSum(a,b int)  int{
-	sum:=a+b
-	if a>10{
-		sum=a+b
+import (
+	"fmt"
+	"time"
+)
 
+func main() {
+	now:=time.Now()
+	count:=0
+	for i:=0;i<10000000000;i++{
+		count+=i
 	}
-	//sum=biz.GetAns(a,b)
-	sum=a+b
-
-	return sum
+	t2:=time.Now()
+	tsub:=now.Sub(t2)
+	fmt.Println(tsub)
+	fmt.Println(int32(tsub.Seconds()))
 }
