@@ -15,4 +15,5 @@ func main() {
 	tsub:=now.Sub(t2)
 	fmt.Println(tsub)
 	fmt.Println(int32(tsub.Seconds()))
+	fmt.Println("master")
 }
