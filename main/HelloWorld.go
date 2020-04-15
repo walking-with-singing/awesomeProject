@@ -11,6 +11,7 @@ func main() {
 	for i:=0;i<10000000000;i++{
 		count+=i
 	}
+	fmt.Println("master")
 	t2:=time.Now()
 	tsub:=now.Sub(t2)
 	fmt.Println(tsub)
